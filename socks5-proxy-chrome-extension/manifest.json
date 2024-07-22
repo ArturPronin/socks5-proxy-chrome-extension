@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "SOCKS5 Proxy Extension",
+  "description": "Connect to the internet through a SOCKS5 proxy.",
+  "version": "1.0",
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": [
+    "proxy",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

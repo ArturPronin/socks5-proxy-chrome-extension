@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SOCKS5 Proxy</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="proxy-settings">
+    <h3>SOCKS5 Proxy</h3>
+    <label for="proxy-host">Proxy Host:</label>
+    <input type="text" id="proxy-host" placeholder="127.0.0.1">
+    <label for="proxy-port">Proxy Port:</label>
+    <input type="text" id="proxy-port" placeholder="10808">
+    <button id="update-proxy">Update Proxy</button>
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="enable-proxy">
+        <span class="slider round"></span>
+      </label>
+      <span id="proxy-status">Disabled</span>
+    </div>
+    <div id="source-code">
+      <a id="source-code-link" href="https://github.com/ArturPronin/socks5-proxy-chrome-extension">Source Code Extention</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
